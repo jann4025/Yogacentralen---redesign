@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+a {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -25,11 +30,12 @@ body {
 
 .fullscreen-video-wrap {
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    z-index: -2;
 }
 
 .fullscreen-video-wrap video {
@@ -41,26 +47,33 @@ body {
     height: 100vh;
     width: 100vw;
     position: absolute;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     background: #1e3c72;
-    z-index: 1;
+    z-index: -1;
     opacity: 0.55;
 }
 
 .header-content {
-    z-index:2
+    z-index: 2;
+    justify-content: center;
+
 }
 
+
 .header-content h1 {
-    font-size: 50px;
+    font-size: 80px;
     margin-bottom: 0;
+    font-family: 'Oswald', sans-serif;
 }
 
 .header-content p {
     font-size: 1.5rem;
     display: block;
     padding-bottom: 2rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+
 }
 
 .btn {
@@ -70,3 +83,183 @@ body {
     padding: 1rem 2rem;
     text-decoration: none;
 }
+
+nav {
+    background-image: linear-gradient(#141E30, rgba(87, 87, 87, 0));
+    top: 0;
+    padding: 30px;
+    margin-top: 50px;
+    text-align: center;
+    z-index: 2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding-right: 100px;
+
+
+}
+
+nav a:last-child {
+    padding-right: 0px;
+}
+
+
+@media only screen and (max-width: 920px) {
+
+    nav {
+        padding-right: 50px;
+    }
+
+    nav a:last-child {
+    padding-right: 0px;
+}
+}
+
+
+
+
+.hidden-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  list-style: none;
+  padding: 30px;
+  margin: 0;
+  width: 40%;
+/*  height: 30%;*/
+  background-color: rgba(0, 43, 53, 0.7);
+  top: 0;
+  left: -105%;
+  transition: .1s linear;
+  z-index: 2;
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  padding-left: 30px;
+  padding-right: 60px;
+}
+.hidden-menu a {
+  text-decoration: none;
+  text-transform: ;
+  font-size: 1.5rem;
+  color: #efefef;
+  padding-left: 30px;
+  padding-right: 60px;
+  transition: .1s ease-out;
+
+}
+.hidden-menu a:hover {
+/*  background-color: #59585d;*/
+  color: #cccccc;
+  padding-left: 30px;
+  padding-right: 60px;
+/*    background-size: 100%;*/
+}
+.hidden-menu a:active {
+    background: none;
+    padding-left: 30px;
+    padding-right: 60px;
+}
+.hidden-menu-ticker {
+  display: none;
+}
+.btn-menu {
+  color: #ffffff;
+  padding: 15px;
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  cursor: pointer;
+  transition: .1s ease-out;
+  z-index: 3;
+  width: 30px;
+  -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+
+ }
+.btn-menu span {
+  display: block;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 7px 0 0;
+  transition: all .1s linear .23s;
+  position: relative;
+ width: 100%;
+}
+
+
+.btn-menu span.first {
+  margin-top: 0;
+}
+/*
+ .hidden-menu-ticker:checked ~ .btn-menu {
+  left: 160px;
+}
+*/
+.hidden-menu-ticker:checked ~ .hidden-menu {
+  left: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+  -webkit-transform: rotate(45deg);
+  top: 10px;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+  opacity: 0;
+}
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+  -webkit-transform: rotate(-45deg);
+  top: -10px;
+}
+
+
+@media only screen and (max-width: 974px) {
+
+    header nav{
+        display: none;
+    }
+
+    * {
+        box-sizing: content-box;
+    }
+
+}
+
+@media only screen and (min-width: 341px) {
+
+    .header-content {
+        margin:5px;
+
+    }
+
+}
+
+
+}
+
+
+
+@media only screen and (min-width: 974px) {
+
+    .hidden-menu,
+    .hidden-menu a,
+    .hidden-menu a:hover,
+    .hidden-menu-ticker,
+    .btn-menu,
+    .btn-menu span,
+    .btn-menu span.first,
+    .hidden-menu-ticker:checked ~ .hidden-menu,
+    .hidden-menu-ticker:checked ~ .btn-menu span.first,
+    .hidden-menu-ticker:checked ~ .btn-menu span.second,
+    .hidden-menu-ticker:checked ~ .btn-menu span.third,
+
+    {
+        display: none;
+    }

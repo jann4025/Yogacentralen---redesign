@@ -7,13 +7,44 @@
     <title>Yogacentralen</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
 </head>
 
 <body>
 
     <section id="splash">
 
-        <header class="v-header container">
+        <header class="top">
+            <nav>
+             <a href="#">Forside</a>
+             <a href="#">Om Yogacentralen</a>
+             <a href="#">Hold</a>
+             <a href="#">Priser</a>
+             <a href="#">Kontakt</a>
+             <a href="#">Vegatarisk</a>
+           </nav>
+
+           <input type="checkbox" id="m1" class="hidden-menu-ticker">
+        <label class="btn-menu" for="m1">
+            <span class="first"></span>
+            <span class="second"></span>
+            <span class="third"></span>
+        </label>
+
+        <ul class="hidden-menu">
+            <li><a href="#">Forside</a></li>
+            <li><a href="#om">Om YC</a></li>
+            <li><a href="#eksempler">Hold</a></li>
+            <li><a href="#typografi">Priser</a></li>
+            <li><a href="#komposition_farver">Kontakt</a></li>
+            <li><a href="#links">Vegetarisk</a></li>
+        </ul>
+
+
+        </header>
+            <div class="v-header container">
+
+
             <div class="fullscreen-video-wrap">
 
                 <video src="yogacentralen_2.mp4" autoplay loop></video>
@@ -27,10 +58,17 @@
 
                 <h1>Yogacentralen</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque nisi veritatis et quaerat fuga dolores sit, dignissimos sapiente laborum odio eos, dolore accusantium blanditiis rem, soluta aperiam. Nostrum, atque, facere.</p>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Read More</a> <br> <br> <br>
+                <i class="fa fa-angle-down" style="font-size:48px"></i>
             </div>
 
-        </header>
+
+
+
+            <div class="emptyspace"></div>
+
+        </div>
+
 
     </section>
 

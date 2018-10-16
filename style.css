@@ -28,6 +28,15 @@ a {
     font-weight: 600;
 }
 
+#undvisere .btn{
+
+}
+
+
+#more-content {
+    display: none;
+}
+
 body {
     line-height: 1.5;
     margin: 10px;

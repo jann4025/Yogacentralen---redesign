@@ -2,16 +2,41 @@
     box-sizing: border-box;
 }
 
+ #splash h1 {
+     font-size: 5em;
+        font-family: 'Oswald', sans-serif;
+
+    }
+#om img {
+    width:  100%;
+    max-width: 377px;
+    max-height: 565px;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+}
+
+
+#om p {
+    color:rgba(20, 30, 48, 0.85);
+}
+
 a {
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
 }
 
 body {
-    margin: 0;
+    line-height: 1.5;
+    margin: 10px;
     overflow-x: hidden;
     font-size: 1rem;
+    background-color: #fffaf0;
+
 }
+
 
 .v-header {
     height: 100vh;
@@ -62,9 +87,7 @@ body {
 
 
 .header-content h1 {
-    font-size: 80px;
     margin-bottom: 0;
-    font-family: 'Oswald', sans-serif;
 }
 
 .header-content p {
@@ -72,7 +95,7 @@ body {
     display: block;
     padding-bottom: 2rem;
     font-family: 'Raleway', sans-serif;
-    font-weight: 600;
+    font-weight: 400;
 
 }
 
@@ -124,7 +147,44 @@ nav a:last-child {
 }
 
 
+.h1-center {
+    text-align: center;
+}
 
+
+
+#om h1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+#om .sectionwrapper{
+    display: flex;
+
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    width: px;
+}
+
+#om .left {
+    flex-basis: 500px;
+    flex-grow: 2;
+    margin-right: -70px;
+}
+
+#om .right{
+    flex-basis: 200px;
+    flex-grow: 1;
+    margin-left: -70px;
+}
+
+#om p {
+/*    display: block;*/
+}
 
 .hidden-menu {
   display: flex;
@@ -262,4 +322,12 @@ nav a:last-child {
 
     {
         display: none;
+    }
+
+
+
+
+    h1 {
+        font-family: 'Oswald', sans-serif;
+
     }

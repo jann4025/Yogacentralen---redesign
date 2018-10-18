@@ -1,6 +1,24 @@
 * {
     box-sizing: border-box;
+    margin: 0 auto;
+    max-width:
+
+
+
 }
+
+#splash,
+#om,
+#undervisere,
+#info,
+#gallery,
+{
+    margin: 50px;
+    padding: 50px;
+
+}
+
+
 
 
 .header-content .logo {
@@ -10,26 +28,59 @@
 
 }
 
+
+.hvid {
+    background-color: white;
+
+}
+
+.om3 {
+    padding-bottom: 30px;
+
+}
+
 #splash h1 {
+
     font-size: 5em;
     font-family: 'Oswald', sans-serif;
 
 }
 
-#om img {
+#splash img {
     width: 100%;
-    max-width: 377px;
-    max-height: 565px;
+    max-width: 500px;
 }
 
-p {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
+#om img {
+    width: 100%;
+    max-width: 477px;
+    max-height: 600px;
+    margin-left: -80px;
 }
+
+@media screen and (max-width: 777px) {
+
+#om img {
+
+  margin-right: 30px;
+
+}
+}
+
+#om {
+
+
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+
+}
+
 
 
 #om p {
+    margin-top: 50px;
     color: rgba(20, 30, 48, 0.85);
+    font-size: 1.2em;
 }
 
 a {
@@ -40,19 +91,42 @@ a {
 #undvisere .btn {}
 
 
+#info {
+    background-color: rgba(121, 188, 226, 0.5)
+}
+
+.column p {
+    margin-top:20px;
+    font-size: 1.7rem;
+    line-height: 2;
+}
+
+#blue-back{
+    background-color: rgba(21, 123, 179, 0.5);
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
 
 
-
-.column-right {
-    flex-basis: 200px;
-    flex-grow: 1;
-
-
+#info .column {
+    padding:60px;
+    margin-top: 50px;
+    flex-basis: 500px;
+    flex-shrink: 1;
 
 }
 
+.column-left {
+    width:300px;
+
+}
+
+.gallery {
+   background-color: rgba(21, 123, 179, 0.5)
+}
+
 .column-left h1,
-.column-left p {
+.column-left p2{
     display: block;
 }
 
@@ -60,18 +134,10 @@ a {
 }
 
 
-.column-right iframe {
-    width: 100%;
-    padding-left: 20px;
 
-}
-
-body {
+    body {
     line-height: 1.5;
-    margin: 0;
-    overflow-x: hidden;
     font-size: 1rem;
-    background-color: #fffaf0;
 
 }
 
@@ -121,7 +187,7 @@ footer .top {
 
 #undervisere h1 {
     margin-top: 90px;
-    font-size: 50px;
+    font-size: 4rem;
     font-family: 'Oswald', sans-serif;
 
 }
@@ -143,8 +209,8 @@ footer .top {
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 50px;
-    padding-left: 30px;
-    padding-right: 30px;
+/*    margin-right: 30px;*/
+/*   margin-left : 50px;*/
 }
 
 .top img {
@@ -152,6 +218,7 @@ footer .top {
     width: 150px;
     height: 150px;
     padding: 20px;
+
 
 }
 
@@ -166,8 +233,8 @@ footer .top {
 
 .container {
     max-width: 960px;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    : 1rem;
+    : 1rem;
     margin: auto;
     text-align: center;
 }
@@ -288,34 +355,42 @@ nav a:last-child {
 }
 
 
-
+#om {
+    margin-top: 60px;
+}
 
 #om .sectionwrapper {
     display: flex;
-
-    justify-content: space-around;
     flex-wrap: wrap;
-    align-items: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    margin-left: 80px;
+    margin-right: 80px;
     width: px;
+     align-items: center;
 }
 
+
+
+
 #om .left {
-    flex-basis: 500px;
-    flex-grow: 2;
-    margin-right: -70px;
+    flex-basis: 800px;
+    flex-grow: 1;
+   margin-right: -70px;
 }
 
 #om .right {
-    flex-basis: 200px;
+    flex-basis: 300px;
     flex-grow: 1;
-    margin-left: -70px;
+   margin-left: -70px;
 }
 
 #om p {
     /*    display: block;*/
 }
+
+.om2 {
+  flex-direction: row-reverse;
+}
+
 
 .hidden-menu {
     display: flex;
@@ -368,7 +443,7 @@ nav a:last-child {
 }
 
 .btn-menu {
-    color: #ffffff;
+    color: #000000;
     padding: 15px;
     position: fixed;
     top: 5px;
@@ -385,7 +460,7 @@ nav a:last-child {
 .btn-menu span {
     display: block;
     height: 3px;
-    background-color: #ffffff;
+    background-color: #000000;
     margin: 7px 0 0;
     transition: all .1s linear .23s;
     position: relative;
@@ -434,10 +509,15 @@ nav a:last-child {
 .sectionwrapper {
      display: flex;
     flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 #info {
    padding: 20px;
+
+}
+
+.h1-center {
     text-align: center;
 }
 
@@ -486,6 +566,7 @@ iframe {
 
 
 
+
 @media only screen and (min-width: 974px) {
 
     .hidden-menu,
@@ -504,8 +585,18 @@ iframe {
         display: none;
     }
 
+    @media only screen and (max-width: 768) {
+        #om p {
+            font-size: 1em;
+        }
+    }
 
 
+    @media only screen and (max-width: 376px) {
+        #undervisere h1 {
+            font-size:  2rem;
+        }
+    }
 
     h1 {
         font-family: 'Oswald', sans-serif;
@@ -513,4 +604,174 @@ iframe {
     }
 
 
+}
+
+
+#mask {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    z-index: 99;
+    height: 500px;
+    width: 900px;
+    border: 5px solid #000;
+}
+
+
+#mask iframe {
+    position: absolute;
+    border-radius: 50%;
+    top: 0; left: 0;
+    z-index: 50;
+
+}
+
+
+
+@media only screen and (max-width: 768) {
+    #om .left {
+
+   margin-right: 0px;
+}
+
+#om2 .right {
+
+   margin-left: 50px;
+}
+}
+
+
+#om2 {
+    margin-top: 60px;
+}
+
+#om2 .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+   flex-direction: row-reverse;
+    margin-left: 80px;
+    margin-right: 80px;
+    width: px;
+     align-items: center;
+}
+
+
+
+
+#om2 .left {
+    flex-basis: 800px;
+    flex-grow: 1;
+   margin-right: -70px;
+}
+
+#om2 .right {
+    flex-basis: 300px;
+    flex-grow: 1;
+   margin-left: -70px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#om img {
+    width:  100%
+}
+
+.textbox-1 {
+    line-height: ;
+   flex-basis: 200px;
+    flex-grow: 1;
+}
+
+
+.object-fit {
+   flex-basis: 100px;
+    flex-grow: 1;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column-gallery {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column-gallery img {
+  margin-top: 8px;
+  vertical-align: middle;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column-gallery {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column-gallery {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+    #gallery {
+        margin-left: 50px;
+    }
+
+
+@media screen and (max-width: 600px) {
+    #mask {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+
+    #om {
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    #om p {
+        margin-left: -50px;
+    }
+
+    #om img {
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+}
+
+
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.gallery-div {
+    flex-basis: 400px;
+    flex-grow: 1;
+    padding: 20px
+}
+
+.gallery-div img {
+    width: 100%;
 }

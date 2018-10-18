@@ -10,13 +10,14 @@
 
 }
 
- #splash h1 {
-     font-size: 5em;
-        font-family: 'Oswald', sans-serif;
+#splash h1 {
+    font-size: 5em;
+    font-family: 'Oswald', sans-serif;
 
-    }
+}
+
 #om img {
-    width:  100%;
+    width: 100%;
     max-width: 377px;
     max-height: 565px;
 }
@@ -28,7 +29,7 @@ p {
 
 
 #om p {
-    color:rgba(20, 30, 48, 0.85);
+    color: rgba(20, 30, 48, 0.85);
 }
 
 a {
@@ -36,28 +37,100 @@ a {
     font-weight: 600;
 }
 
-#undvisere .btn{
+#undvisere .btn {}
+
+
+
+
+
+.column-right {
+    flex-basis: 200px;
+    flex-grow: 1;
+
+
 
 }
 
+.column-left h1,
+.column-left p {
+    display: block;
+}
+
+.column-left h1 {
+}
 
 
+.column-right iframe {
+    width: 100%;
+    padding-left: 20px;
+
+}
 
 body {
     line-height: 1.5;
-    margin: 10px;
+    margin: 0;
     overflow-x: hidden;
     font-size: 1rem;
     background-color: #fffaf0;
 
 }
 
+footer {
+    width: 100wv;
+    background-color: #141E30;
+
+
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+
+
+}
+
+footer .bottom {
+    display: flex;
+
+}
+
+footer .top {
+
+}
+
+#ab-navn {
+  display: none;
+
+}
+
+#ab-hover {
+    text-align: center;
+}
+
+#ab-hover:hover #ab-navn {
+  display: block;
+}
+
+
+
+.bottom .space {
+    width: 20px;
+}
+
+
+
 #undervisere h1 {
-    margin-top: 50px;
+    margin-top: 90px;
     font-size: 50px;
     font-family: 'Oswald', sans-serif;
 
 }
+
+.top p {
+
+    color: white;
+}
+
 
 
 
@@ -65,11 +138,11 @@ body {
     margin-top: 50px;
 }
 
-.top {
+#undervisere .top {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-
+    margin-bottom: 50px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -81,6 +154,7 @@ body {
     padding: 20px;
 
 }
+
 
 
 .v-header {
@@ -187,8 +261,13 @@ nav a:last-child {
     }
 
     nav a:last-child {
-    padding-right: 0px;
+        padding-right: 0px;
+    }
 }
+
+#info h2 {
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
 }
 
 
@@ -211,7 +290,7 @@ nav a:last-child {
 
 
 
-#om .sectionwrapper{
+#om .sectionwrapper {
     display: flex;
 
     justify-content: space-around;
@@ -228,113 +307,162 @@ nav a:last-child {
     margin-right: -70px;
 }
 
-#om .right{
+#om .right {
     flex-basis: 200px;
     flex-grow: 1;
     margin-left: -70px;
 }
 
 #om p {
-/*    display: block;*/
+    /*    display: block;*/
 }
 
 .hidden-menu {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: fixed;
-  list-style: none;
-  padding: 30px;
-  margin: 0;
-  width: 40%;
-/*  height: 30%;*/
-  background-color: rgba(0, 43, 53, 0.7);
-  top: 0;
-  left: -105%;
-  transition: .1s linear;
-  z-index: 2;
-  -webkit-transform: translateZ(0);
-  -webkit-backface-visibility: hidden;
-  padding-left: 30px;
-  padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    list-style: none;
+    padding: 30px;
+    margin: 0;
+    width: 40%;
+    /*  height: 30%;*/
+    background-color: rgba(0, 43, 53, 0.7);
+    top: 0;
+    left: -105%;
+    transition: .1s linear;
+    z-index: 2;
+    -webkit-transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    padding-left: 30px;
+    padding-right: 60px;
 }
+
 .hidden-menu a {
-  text-decoration: none;
-  text-transform: ;
-  font-size: 1.5rem;
-  color: #efefef;
-  padding-left: 30px;
-  padding-right: 60px;
-  transition: .1s ease-out;
+    text-decoration: none;
+    text-transform: ;
+    font-size: 1.5rem;
+    color: #efefef;
+    padding-left: 30px;
+    padding-right: 60px;
+    transition: .1s ease-out;
 
 }
+
 .hidden-menu a:hover {
-/*  background-color: #59585d;*/
-  color: #cccccc;
-  padding-left: 30px;
-  padding-right: 60px;
-/*    background-size: 100%;*/
+    /*  background-color: #59585d;*/
+    color: #cccccc;
+    padding-left: 30px;
+    padding-right: 60px;
+    /*    background-size: 100%;*/
 }
+
 .hidden-menu a:active {
     background: none;
     padding-left: 30px;
     padding-right: 60px;
 }
+
 .hidden-menu-ticker {
-  display: none;
+    display: none;
 }
+
 .btn-menu {
-  color: #ffffff;
-  padding: 15px;
-  position: fixed;
-  top: 5px;
-  left: 5px;
-  cursor: pointer;
-  transition: .1s ease-out;
-  z-index: 3;
-  width: 30px;
-  -webkit-transform: translateZ(0);
+    color: #ffffff;
+    padding: 15px;
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    cursor: pointer;
+    transition: .1s ease-out;
+    z-index: 3;
+    width: 30px;
+    -webkit-transform: translateZ(0);
     -webkit-backface-visibility: hidden;
 
- }
+}
+
 .btn-menu span {
-  display: block;
-  height: 3px;
-  background-color: #ffffff;
-  margin: 7px 0 0;
-  transition: all .1s linear .23s;
-  position: relative;
- width: 100%;
+    display: block;
+    height: 3px;
+    background-color: #ffffff;
+    margin: 7px 0 0;
+    transition: all .1s linear .23s;
+    position: relative;
+    width: 100%;
 }
 
 
 .btn-menu span.first {
-  margin-top: 0;
+    margin-top: 0;
 }
+
 /*
  .hidden-menu-ticker:checked ~ .btn-menu {
   left: 160px;
 }
 */
 .hidden-menu-ticker:checked ~ .hidden-menu {
-  left: 0;
-}
-.hidden-menu-ticker:checked ~ .btn-menu span.first {
-  -webkit-transform: rotate(45deg);
-  top: 10px;
-}
-.hidden-menu-ticker:checked ~ .btn-menu span.second {
-  opacity: 0;
-}
-.hidden-menu-ticker:checked ~ .btn-menu span.third {
-  -webkit-transform: rotate(-45deg);
-  top: -10px;
+    left: 0;
 }
 
+.hidden-menu-ticker:checked ~ .btn-menu span.first {
+    -webkit-transform: rotate(45deg);
+    top: 10px;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.second {
+    opacity: 0;
+}
+
+.hidden-menu-ticker:checked ~ .btn-menu span.third {
+    -webkit-transform: rotate(-45deg);
+    top: -10px;
+}
+
+.column-right {
+    height: 450px;
+    flex-basis: 200px;
+    flex-grow: 1:
+}
+
+.column-left {
+    margin-top: 60px;
+    flex-basis: 200px;
+    flex-grow: 1;
+}
+.sectionwrapper {
+     display: flex;
+    flex-wrap: wrap;
+}
+
+#info {
+   padding: 20px;
+    text-align: center;
+}
+
+#info h1 {
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+
+iframe {
+    width: 100%;
+}
+
+.top {
+    width: 100vw;
+}
+
+#info .bottom {
+    text-align: center;
+}
 
 @media only screen and (max-width: 974px) {
 
-    header nav{
+    header nav {
         display: none;
     }
 
@@ -347,7 +475,7 @@ nav a:last-child {
 @media only screen and (min-width: 341px) {
 
     .header-content {
-        margin:5px;
+        margin: 5px;
 
     }
 
@@ -372,7 +500,7 @@ nav a:last-child {
     .hidden-menu-ticker:checked ~ .btn-menu span.second,
     .hidden-menu-ticker:checked ~ .btn-menu span.third,
 
-    {
+        {
         display: none;
     }
 
@@ -383,3 +511,6 @@ nav a:last-child {
         font-family: 'Oswald', sans-serif;
 
     }
+
+
+}

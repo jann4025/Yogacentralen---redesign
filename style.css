@@ -19,7 +19,15 @@
 }
 
 
+.om3 {
+   padding-top: 40px;
+    padding-bottom: 40px;
+background-color: rgba(121, 188, 226, 0.5);
+}
 
+#splash p {
+    font-weight: 500;
+}
 
 .header-content .logo {
     width: 437px;
@@ -30,9 +38,9 @@
 
 
 .hvid {
-    background-color: white;
 
 }
+
 
 .om3 {
     padding-bottom: 30px;
@@ -105,7 +113,9 @@ a {
     background-color: rgba(21, 123, 179, 0.5);
     padding-bottom: 40px;
     padding-top: 20px;
+
 }
+
 
 
 #info .column {
@@ -122,7 +132,7 @@ a {
 }
 
 .gallery {
-   background-color: rgba(21, 123, 179, 0.5)
+/*   background-color: rgba(21, 123, 179, 0.5);*/
 }
 
 .column-left h1,
@@ -138,6 +148,8 @@ a {
     body {
     line-height: 1.5;
     font-size: 1rem;
+        background-image: url(http://laurema.lt/wp-content/uploads/2018/04/blurr-background-green.jpg);
+        background-size: cover;
 
 }
 
@@ -233,8 +245,6 @@ footer .top {
 
 .container {
     max-width: 960px;
-    : 1rem;
-    : 1rem;
     margin: auto;
     text-align: center;
 }
@@ -247,6 +257,7 @@ footer .top {
     height: 100vh;
     overflow: hidden;
     z-index: -2;
+    background-color: rgba(121, 188, 226, 0.5);
 }
 
 .fullscreen-video-wrap video {
@@ -391,6 +402,11 @@ nav a:last-child {
   flex-direction: row-reverse;
 }
 
+
+.video-2 {
+    margin-top: 50px;
+    max-width: 1283px;
+}
 
 .hidden-menu {
     display: flex;
@@ -614,7 +630,7 @@ iframe {
     z-index: 99;
     height: 500px;
     width: 900px;
-    border: 5px solid #000;
+    border: 5px solid #ffffff;
 }
 
 
